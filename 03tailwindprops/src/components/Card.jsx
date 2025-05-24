@@ -6,7 +6,7 @@ function Card({ username, btnText = "visit me" }) {
     <>
       <div className="max-w-xs rounded-md shadow-md bg-black text-gray-100">
         <img
-          src="https://source.unsplash.com/301x301/?random"
+          src="https://images.pexels.com/photos/3371779/pexels-photo-3371779.jpeg?auto=compress&cs=tinysrgb&w=600"
           alt=""
           className="object-cover object-center w-full rounded-t-md h-72 bg-gray-500"
         />
