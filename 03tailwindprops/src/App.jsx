@@ -18,9 +18,9 @@ function App() {
         Tailwind is working! 🎉
       </h1>
 
-      <div class="Cards">
-        <Card username="chaiaurcode" btnText="click me" />
-        <Card username="hitesh" />
+      <div className="Cards flex items-center gap-10">
+        <Card username="chaiaurcode" btnText="click me" myObj={myObj} newArr={newArr}/>
+        <Card username="hitesh" btnText="visit me"/>
       </div>
     </>
   );
