@@ -48,7 +48,7 @@ function App() {
           <input
             type="text"
             value={password}
-            className="outline-none w-lg text-lg py-1 pkx-3 bg-white"
+            className="outline-none w-lg text-lg py-1 px-3 bg-white"
             placeholder="password"
             readOnly
             ref={passwordRef}
