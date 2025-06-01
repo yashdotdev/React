@@ -1,14 +1,32 @@
-import Chai from "./chai"
+import Chai from "./chai";
 
-function App() {
-
+export default function Blog() {
   return (
     <>
-    <Chai/>
-    <h1>chai aur react</h1>
-    <p>test para</p>
+      <Post title="An update" body="It's been a while since I posted..." />
+      <Post title="My new blog" body="I am starting a new blog!" />
+      <Chai />
     </>
-  )
+  );
 }
 
-export default App
+function Post({ title, body }) {
+  return (
+    <>
+      <PostTitle title={title} />
+      <PostBody body={body} />
+    </>
+  );
+}
+
+function PostTitle({ title }) {
+  return <h1>{title}</h1>;
+}
+
+function PostBody({ body }) {
+  return (
+    <article>
+      <p>{body}</p>
+    </article>
+  );
+}

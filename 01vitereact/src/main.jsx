@@ -1,4 +1,6 @@
-import React from 'react'
+/* eslint-disable no-unused-vars */
+/* eslint-disable react-refresh/only-export-components */
+import React, { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 
@@ -38,10 +40,9 @@ const reactElement = React.createElement(
 
 
 createRoot(document.getElementById('root')).render(
-    // <App />
-    // <reactElement/>
-    // reactElement()
-    reactElement
-    // <MyApp/>
-    // MyApp()
+    <StrictMode>
+    <App />
+    {/* <MyApp/> */}
+    {/* MyApp() */}
+    </StrictMode>
 )
