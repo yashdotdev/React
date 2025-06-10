@@ -9,6 +9,8 @@ function App() {
   const addValue = () => {
     if (counter <= 20) {
       // setCounter(counter + 1);
+
+      // Hey, whenever this runs, use the most up-to-date value, not just the value from when the function started.
       setCounter((prevCounter) => prevCounter + 1);
       setCounter((prevCounter) => prevCounter + 1);
       setCounter((prevCounter) => prevCounter + 1);
