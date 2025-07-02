@@ -18,18 +18,23 @@ function AboutPage() {
   );
 }
 
-function App() {
+const user = {
+  name: "Yash",
+  imageUrl: "https://pbs.twimg.com/media/GO4mZkda8AAVVsP.jpg:large",
+  imageSize: "90px",
+};
+
+export default function App() {
   return (
     <div className="App">
-      <h1>Hello, welcome to CRA react app!!</h1>
+      <h1>Hello, welcome to {user.name}'s website!!</h1>
       <MyButton />
       <AboutPage />
       <img
         className="avatar"
-        src="https://pbs.twimg.com/media/GO4mZkda8AAVVsP.jpg:large"
+        src={user.imageUrl}
+        style={{ width: user.imageSize, height: user.imageSize }}
       />
     </div>
   );
 }
-
-export default App;
