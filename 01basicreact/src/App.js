@@ -21,7 +21,7 @@ function AboutPage() {
 const user = {
   name: "Yash",
   imageUrl: "https://pbs.twimg.com/media/GO4mZkda8AAVVsP.jpg:large",
-  imageSize: "90px",
+  imageSize: "190px",
 };
 
 export default function App() {
