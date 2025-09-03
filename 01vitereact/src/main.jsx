@@ -6,17 +6,15 @@ import App from './App.jsx'
 
 
 function MyApp() {
-    return (
-        <div>
-            <h1>Chai aur react | Yash</h1>
-        </div>
-    )
+  return (
+    <div>
+      <h1>Chai aur react | Yash</h1>
+    </div>
+  );
 }
 
 
-
-
-// const reactElement = {
+// const reactElement = {   
 //   type: "a",
 //   props: {
 //     href: "https://google.com",

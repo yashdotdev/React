@@ -1,40 +1,27 @@
-/* eslint-disable jsx-a11y/alt-text */
 import "./App.css";
-
-function MyButton() {
-  return <button className="btn">Click me</button>;
-}
-
-function AboutPage() {
-  return (
-    <>
-      <h1>About</h1>
-      <p>
-        Hello there.
-        <br />
-        How do you do?
-      </p>
-    </>
-  );
-}
-
-const user = {
-  name: "Yash",
-  imageUrl: "https://pbs.twimg.com/media/GO4mZkda8AAVVsP.jpg:large",
-  imageSize: "190px",
-};
+import MyButton from "./components/MyButton";
+import { useState } from "react";
+import ShoppingList from "./components/ShoppingList";
 
 export default function App() {
+  const [count, setCount] = useState(0);
+
+  function handleClick() {
+    setCount(count + 1);
+    console.log(count);
+  }
+
   return (
-    <div className="App">
-      <h1>Hello, welcome to {user.name}'s website!!</h1>
-      <MyButton />
-      <AboutPage />
-      <img
-        className="avatar"
-        src={user.imageUrl}
-        style={{ width: user.imageSize, height: user.imageSize }}
-      />
-    </div>
+    <>
+      <div className="App">
+        <h1>Counters that update separately</h1>
+
+        <MyButton count={count} onClick={handleClick} />
+        <br />
+        <MyButton count={count} onClick={handleClick} />
+      
+        <ShoppingList/>
+      </div>
+    </>
   );
 }
